@@ -15,44 +15,52 @@ let teamMembers = [
         job: " Socia Media Manager"
     },
     {
-        photo: "",
+        photo: "barbara-ramos-graphic-designer.jpg",
         name: "Barbara Ramos",
         job: "Graphic Designer"
     },
     {
-        photo: "",
+        photo: "scott-estrada-developer.jpg",
         name: "Scott Estrada",
         job: "Developer"
     },
     {
-        photo: "",
+        photo: "walter-gordon-office-manager.jpg",
         name: "Walter Gordon",
         job: "Office Manager"
     },
     {
-        photo: "",
+        photo: "wayne-barnett-founder-ceo.jpg",
         name: "Wayne Barnett",
         job: "Founder & CEO"
     },
 ];
 
 
-document.getElementById("team_cards").innerHTML += `
-    <div class="card col-4">
-        <img src="./img/${teamMembers[0].photo}" class="card-img-top" alt="Angela">
-        <div class="card-body">
-            <p class="card-text">${teamMembers[0].name}</p>
-            <p>${teamMembers[0].job}</p>
-        </div>
-    </div>
+for (let i = 0; i < teamMembers.length; i++){
 
-`
-document.getElementById("team_cards").innerHTML += `
+    document.getElementById("team_cards").innerHTML += `
     <div class="card col-4">
-        <img src="./img/${teamMembers[1].photo}" class="card-img-top" alt="Angela">
+        <img src="./img/${teamMembers[i].photo}" class="card-img-top" alt="Angela">
         <div class="card-body">
-            <p class="card-text">${teamMembers[1].name}</p>
-            <p>${teamMembers[1].job}</p>
+            <p class="card-text">${teamMembers[i].name}</p>
+            <p>${teamMembers[i].job}</p>
         </div>
     </div>
-`
+    `
+
+}
+
+/*
+for (let member in teamMembers) {
+    document.getElementById("team_cards").innerHTML += `
+    <div class="card col-4">
+        <img src="./img/${teamMembers[member].photo}" class="card-img-top" alt="Angela">
+        <div class="card-body">
+            <p class="card-text">${teamMembers[member].name}</p>
+            <p>${teamMembers[member].job}</p>
+        </div>
+    </div>
+    `
+}
+*/
