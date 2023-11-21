@@ -5,33 +5,33 @@
 
 let teamMembers = [
      {
-        foto: "",
+        photo: "",
         name: "Angela Caroll",
-        job: " Chief editor"
+        job: " Chief Editor"
     },
     {
-        foto: "",
+        photo: "",
         name: "Angela Lopez",
-        job: " Socia media manager"
+        job: " Socia Media Manager"
     },
     {
-        foto: "",
+        photo: "",
         name: "Barbara Ramos",
-        job: "Graphic designer"
+        job: "Graphic Designer"
     },
     {
-        foto: "",
+        photo: "",
         name: "Scott Estrada",
         job: "Developer"
     },
     {
-        foto: "",
+        photo: "",
         name: "Walter Gordon",
-        job: "Office manager"
+        job: "Office Manager"
     },
     {
-        foto: "",
+        photo: "",
         name: "Wayne Barnett",
-        job: "Founder"
+        job: "Founder & CEO"
     },
 ];
